@@ -1,40 +1,237 @@
 <!doctype html>
 <html lang="it">
- 
+
 <head>
   <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Prova Pratica Marco Escher</title>
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prime Figures - Prova pratica Erik Acasandri</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
- 
+
 <body>
-  <header></header>
+  <header class="navigation">
+    <div class="navigation-content">
+      <div class="navigation-brand">
 
-<main>
-  <section class="hero">
-    <div class="hero-content container">
-    <p class="eyebrow">
-          Danilo Morgagni · UI/UX Design · 2026
-      <svg class="eyebrow-cursor" width="8" height="10" viewBox="0 0 8 10" fill="none"
+        <a class="navigation-logo" 
+           href="https://github.com/education" 
+           aria-label="GitHub Education">
+          
+           <span 
+            class="navigation-back-arrow" 
+            aria-hidden="true">‹</span>
+
+          <img src="assets/images/github-mark.svg" width="24" height="24" alt="" 
+          />
+        </a>
+
+         <a class="navigation-title"
+            href="#top">GitHub 
+          <span>Prime Figure - Case Study</span></a>
+      </div>
+      <nav id="navigation-panel" class="navigation-panel" popover="auto" aria-label="Capitoli della storia">
+
+        <ul class="navigation-list">
+        <li><a href="#concept"><span>Concept</span></a></li>
+        <li><a href="#sitemap"><span>Sitemap</span></a></li>
+        <li><a href="#assets"><span>Assets</span></a></li>
+        <li><a href="#prototipi"><span>Prototipi</span></a></li>
+        <li><a href="#highlights"><span>Highlights</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" tabindex="-1">
+
+    <section class="hero">
+      <div class="hero-content container">
+        <p class="eyebrow">
+          Erik Acasandri · UI/UX Design · 2026
+          <svg class="eyebrow-cursor" width="8" height="10" viewBox="0 0 8 10" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-      <rect width="8" height="10" fill="#5FED83" />
-      </svg>
-    </p>
-      <h1 class="heading heading-size-1">Sentcell. Dare forma a una scienza complessa.</h1>
-    <p class="hero-text text text-size-200">Come dare accesso a una scienza complessa? La mia
-          reinterpretazione<br>didattica di Sentcell parte dai livelli
-          di lettura.</p>
-    <div class="button-group">
-      <a href="#storia" class="button button-primary">Leggi la storia</a>
-      <a href="#elaborati" class="button button-secondary">Esplora gli elaborati</a>
-    </div>
-  <img class="hero-image" src="assets/images/sentcell-home.webp" alt="screenshot desktop della home di sentcell">
-    </div>
-  </section>
-</main>
+            <rect width="8" height="10" fill="#5FED83" />
+          </svg>
+        </p>
 
-<footer></footer>
+        <h1 class="heading heading-size-1">
+          Prime Figures. <br> Dare forma a una passione complessa.
+        </h1>
+
+        <p class="hero-text text text-size-200">
+          Progettare un e-commerce premium per figure collezionabili anime e manga, 
+          trasformando la complessità di un catalogo enorme in un'esperienza di 
+          navigazione fluida e immersiva.
+        </p>
+        
+        <div class="button-group">
+          <a href="#scopri" 
+          class="button button-primary">
+          Scopri il progetto
+          </a>
+
+          <a href="#esplora" 
+          class="button button-secondary">
+          Esplora il design system
+          </a>
+
+        </div>
+
+        <div>
+        <img class="hero-image" 
+        src="/Users/test1/Documents/GitHub/TestRepository/assets/images/Classifica.png" 
+        alt="screenshot desktop della classifica Prime Figures">
+        </div>
+      </div>
+    </section>
+
+    <section class="project-info">
+      
+     <div class="container project-info-grid">
+
+      <div>
+         <span class="info-label">
+          Studente
+         </span>
+      
+         <strong>
+          Erik Emanuel <br> Acasandri
+         </strong>
+      </div>
+
+      <div>
+         <span class="info-label">
+          Corso
+         </span>
+      
+         <strong>
+          ITS Web Design e Strategie <br> Digitali
+         </strong>
+      </div>
+
+      <div>
+         <span class="info-label">
+          Modulo
+         </span>
+      
+         <strong>
+          UI/UX Design
+         </strong>
+      </div>
+
+      <div>
+         <span class="info-label">
+           Scuola e anno
+         </span>
+      
+         <strong>
+          ITS Academy i-CREA, CFP <br> Bauer Milano - 2026
+         </strong>
+      </div>
+
+     </div>
+    </section>
+    
+    <!-- Destinazioni provvisorie dei link, da completare/sostituire in base al vostro case study -->
+    <div class="chapters container" id="storia">
+
+      <section 
+        id="concept" 
+        class="heading">
+        
+        <div class="container concept-grid">
+          
+          <div class="concept-main">
+
+            <p class="section-label">
+              CONCEPT
+              <svg class="eyebrow-cursor" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="8" height="10" fill="#5FED83" />
+              </svg>
+            </p>
+
+           <h2>
+              Una passione, <br> troppi livelli di <br> complessità
+           </h2>
+          
+            <a href="#top">Torna all’inizio</a>
+
+           <p>
+             Il mercato delle figure da collezione anime è in forte crescita,
+             ma le piattaforme esistenti sono frammentate, 
+             difficili da navigare e non offrono un'esperienza all'altezza
+              del valore dei prodotti. 
+           </p>
+
+           <p>
+             I collezionisti spendono centinaia di euro in statuette premium,
+             ma le navigano su siti con architetture confuse, filtri rotti
+             e identità visive inconsistenti.
+           </p>
+        </div>
+
+        <aside class="project-menu">
+        
+          <h3>
+            Obiettivo del progetto
+          </h3>
+
+            <a href="#concept">
+              Concept
+            </a>
+
+            <a href="#sitemap">
+              Sitemap
+            </a>
+
+            <a href="#assets">
+              assets
+            </a>
+
+           <a href="#highlights">
+             Highlights
+            </a>
+
+           <a href="#case-study">
+             Case Study
+            </a>
+
+          <div class="elaborati">
+            <h3>
+              Gli elaborati
+            </h3>
+
+            <p>
+              Dal racconto al visual del progetto.
+            </p>
+
+          </div>
+        </aside>
+
+      </section>
+
+      <section id="sitemap">
+        <h2 class="heading">Sitemap</h2>
+        <a href="#top">Torna all’inizio</a>
+      </section>
+
+      <section id="assets">
+        <h2 class="heading">Assets</h2>
+        <a href="#top">Torna all’inizio</a>
+      </section>
+
+      <section id="prototipi">
+        <h2 class="heading" id="elaborati">Prototipi</h2>
+        <a href="#top">Torna all’inizio</a>
+      </section>
+
+      <section id="highlights">
+        <h2 class="heading">Highlights</h2>
+        <a href="#top">Torna all’inizio</a>
+      </section>
+    </div>
+  </main>
+  <footer></footer>
 </body>
- 
-</html>
