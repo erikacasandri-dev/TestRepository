@@ -22,21 +22,29 @@
             class="navigation-back-arrow" 
             aria-hidden="true">‹</span>
 
-          <img src="assets/images/github-mark.svg" width="24" height="24" alt="" 
-          />
+          <img src="assets/images/github-mark.svg" width="24" height="24" alt=""/>
         </a>
 
          <a class="navigation-title"
             href="#top">
-            GitHub <span> Prime Figure - Case Study</span></a>
+            GitHub <span> Prime Figure - Case Study</span>
+         </a>
       </div>
-      <nav id="navigation-panel" class="navigation-panel" popover="auto" aria-label="Capitoli della storia">
+      
+      <button class="navigation-toggle"
+        type="button"
+        aria-label="Apri il menu"
+        aria-expanded="false"
+        aria-controls="navigation-panel">
+      </button>
 
+      <nav id="navigation-panel" class="navigation-panel" aria-label="Capitoli della storia">
         <ul class="navigation-list">
-        <li><a href="#concept"><span>Concept</span></a></li>
-        <li><a href="#sitemap"><span>Sitemap</span></a></li>
-        <li><a href="#assets"><span>Assets</span></a></li>
-        <li><a href="#highlights"><span>Highlights</span></a></li>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#sitemap">Sitemap</a></li>
+        <li><a href="#assets">Assets</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#casestudy">Case study</a></li>
         </ul>
       </nav>
     </div>
@@ -66,12 +74,12 @@
         
         <div class="hero-buttons">
 
-          <a href="#scopri" 
+          <a href="#concept" 
           class="button button-primary">
           Scopri il progetto
           </a>
 
-          <a href="#esplora" 
+          <a href="#case-study" 
           class="button button-secondary">
           Esplora il design system
           </a>
@@ -140,9 +148,7 @@
         class="concept section white">
         
         <div class="container concept-grid">
-          
           <div class="concept-main">
-
             <p class="section-label">
               CONCEPT
               <svg class="eyebrow-cursor" width="8" height="10" viewBox="0 0 8 10" fill="none"
@@ -169,7 +175,7 @@
            </p>
           </div>
 
-        <aside class="project-menu">
+          <aside class="project-menu">
         
           <h3>
             Obiettivo del progetto
@@ -205,13 +211,12 @@
             </p>
 
             <a href="#">
-              Apri il file figma >
+              Apri il file figma
             </a>
           </div>
 
+          </aside>
         </div>
-
-        </aside>
 
     <div class="container objectives">
 
@@ -252,7 +257,7 @@
           </div>
 
         <h3>
-          Sguire le uscite
+          Seguire le uscite
         </h3>
 
           <p>
@@ -267,10 +272,9 @@
 
     <section 
        id="sitemap"
-       class="heading">
+       class="sitemap">
       
         <div class="container">
-          
           <div class="section-intro">
 
             <p class="section-label">
@@ -279,11 +283,12 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="8" height="10" fill="#5FED83" />
               </svg>
-              <h2>
-                Dare ad ogni personaggio 
-                la propria destinazione.
-              </h2>
             </p>
+
+            <h2>
+              Dare ad ogni personaggio 
+              la propria destinazione.
+            </h2>
 
             <p>
               L'architettura dell'informazione ruota attorno
@@ -316,7 +321,7 @@
             </p>
 
             <a href="#">
-              Apri la mappa completa >
+              Apri la mappa completa 
             </a>
           </div>
 
@@ -336,7 +341,6 @@
       class="assets-section">
 
       <div class="container">
-          
           <div class="section-intro dark-intro">
 
             <p class="section-label">
@@ -345,12 +349,12 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="8" height="10" fill="#5FED83" />
               </svg>
-
-              <h2>
-                Un segno riconoscibile, 
-                spazio ai contenuti
-              </h2>
             </p>
+
+            <h2>
+              Un segno riconoscibile, 
+              spazio ai contenuti
+            </h2>
 
             <p>
               Nel mio percorso, l'identità diventa un criterio
@@ -416,7 +420,6 @@
         class="highlight section-white">
 
       <div class="container final-container">
-        
         <div class="final-intro">
 
           <p class="section-label">
@@ -425,11 +428,11 @@
               xmlns="http://www.w3.org/2000/svg">
               <rect width="8" height="10" fill="#5FED83" />
             </svg>
-
-            <h2>
-             Rendere visibili relazioni e scelte
-            </h2>
           </p>
+
+          <h2>
+            Rendere visibili relazioni e scelte
+          </h2>
 
           <p>
             Ogni elemento progettato contribuisce a rendere
@@ -441,8 +444,7 @@
       </section>
 
       <section
-        class="container final-container method-grid">
-
+        class="method-section section-white">
         <div class="container final-container method-grid">
           <div class="method-heading">
             
@@ -454,7 +456,7 @@
 
           <div class="method-content">
 
-            <detail open>
+            <details open>
               <summary>
                 Che cosa comprendo nella reinterpretazione?
               </summary>
@@ -465,9 +467,9 @@
                 di accesso alle informazioni. La struttura
                 organizza i materiali in modo chiaro e coerente.
               </p>
-            </detail>
+            </details>
 
-            <detail>
+            <details>
               <summary>
                 Quali sono le fonti e i vincoli?
               </summary>
@@ -478,7 +480,7 @@
                 dalle esigenze delle persone che utilizzeranno
                 il sistema.
               </p>
-            </detail>
+            </details>
           </div>
 
         </div>
@@ -486,7 +488,6 @@
 
       <section
         class="quote-section section-white">
-
         <div class="container final-container quote-grid">
           <div class="quote-main">
             
@@ -507,7 +508,7 @@
             </p>
 
             <p>
-              Riflessione sul prtogetto e sul 
+              Riflessione sul proggetto e sul 
               processo di progettazione.
             </p>
           </div>
@@ -543,9 +544,8 @@
           </div>
 
 
-          <div class="system-placholder">
-
-            <div class="placholder-inner">
+          <div class="system-placeholder">
+            <div class="placeholder-inner">
 
             <p>
               IMMAGINE SEGNAPOSTO
@@ -562,6 +562,7 @@
         <div class="system-cards">
 
           <article class="system-card">
+            <span class="card-line"></span>
             <h3> Studiare il sistema</h3>
             <p>
               Definire stili tipografici, colori e spaziature 
@@ -604,7 +605,6 @@
     </section>
 
     <section class="project-cta">
-
       <div class="container final-container">
 
       <p class="section-label">
@@ -630,8 +630,9 @@
       </a>
     </div>
     </section>
+  </main>
 
-  <footer class="footer">
+    <footer class="footer">
     <div class="container footer-content">
 
       <a class="footer-logo"
@@ -648,11 +649,10 @@
       </nav>
 
       <p class="footer-credits">
-        Prime Figuresm - Erik Acasandri - 2026
+        Prime Figure - Erik Acasandri - 2026
       </p>
     </div>
 
   </footer>
-  </main>
 </body>
 </html>
