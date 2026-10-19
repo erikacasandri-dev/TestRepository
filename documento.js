@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* =====================================================
-     BREAKDOWN TABS
-  ===================================================== */
 
   const breakdownTabs =
     document.querySelector(".breakdownTabs");
@@ -16,16 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (breakdownTabs) {
 
-    /*
-     * Comunichiamo al CSS che JavaScript è
-     * effettivamente disponibile.
-     */
     breakdownTabs.classList.add("breakdownTabs-ready");
 
-
-    /*
-     * Funzione che seleziona una voce.
-     */
     function selectBreakdownTab(selectedIndex) {
 
       for (let i = 0; i < breakdownTabsItems.length; i++) {
@@ -46,11 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-    /*
-     * Colleghiamo ogni pulsante alla
-     * posizione della relativa voce.
-     */
     for (let i = 0; i < breakdownTabsButtons.length; i++) {
 
       breakdownTabsButtons[i].addEventListener(
@@ -65,10 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  /* =====================================================
-     NAVIGAZIONE
-  ===================================================== */
-
   const navigation =
     document.querySelector(".navigation");
 
@@ -78,11 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const desktopMedia =
     window.matchMedia("(min-width: 1000px)");
 
-
-  /*
-   * A desktop il pannello della navigazione
-   * non deve comportarsi come popover.
-   */
   function updateNavigation() {
 
     if (!navigationPanel) {
@@ -113,10 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
 
-  /*
-   * Quando si clicca una voce della navigazione
-   * su mobile, chiudiamo il popover.
-   */
   if (navigationPanel) {
 
     const navigationLinks =

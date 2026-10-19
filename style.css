@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
+}
+
 @font-face {
     font-family: 'Mona Sans';
     src: url("assets/fonts/mona-sans.woff2") format("woff2");
@@ -15,16 +24,6 @@
 
 
 
-
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--nav-height);
-}
 
 
 body {
@@ -78,6 +77,7 @@ h3 {
 }
 
 .navigation-content {
+    width: 100%;
     height: 100%;
     padding-inline: 32px;
     display: flex;
@@ -198,7 +198,7 @@ h3 {
 
 
 .button {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 38px;
@@ -206,7 +206,7 @@ h3 {
     font-size: 12px;
     font-weight: 600;
     border-radius: 4px;
-    transition: filter 0.2s ease, background 0.2 ease;
+    transition: filter 0.2 ease;
 }
 
 .button-primary {
@@ -266,7 +266,7 @@ h3 {
 }
 
 .project-info-grid > div:last-child {
-    bording-right: 0;
+    border-right: 0;
 }
 
 .info-label {
@@ -286,7 +286,12 @@ h3 {
     color: #111;
 }
 
-
+.project-cta {
+    background: #050505;
+    color: #fff;
+    padding: 90px 0 70px;
+    text-align: center;
+}
 
 
 
@@ -308,7 +313,7 @@ h3 {
 
 
 .concept {
-    padding: 80px 0 0px;
+    padding: 80px 0;
 }
 
 .concept-grid {
@@ -332,6 +337,16 @@ h3 {
     line-height: 1.7;
     color: #666;
 }
+
+
+
+
+
+
+
+
+
+
 
 .project-menu {
     padding-top: 10px;
@@ -434,19 +449,15 @@ h3 {
 
 .section-intro > p:not(.section-label) {
     font-size: 13px;
+    line-height: 1.7;
     color: #777;
+    margin-bottom: 15px;
 }
 
 
 
 
 
-
-
-
-.sitemap {
-    padding: 130px 0;
-}
 
 .sitemap {
     padding: 130px 0;
@@ -487,29 +498,33 @@ h3 {
     border-radius: 6px;
 }
 
+
+
+
+
+
+
+
 .assets-section {
     padding: 120px 0;
     background: #050505;
     color: #fff;
 }
 
-.dark-intro {
-    color: #fff;
-}
-
-.dark-intro p {
+.dark-intro > p:not(.section-label) {
     color: #777;
 }
 
 .assets-content {
     display: grid;
-    grid-template-columns: 1fr, 1.2fr;
+    grid-template-columns: 1fr 1.2fr;
     gap: 80px;
     align-items: center;
 }
 
 .assets-text h3 {
     max-width: 400px;
+    margin-bottom: 14px;
     font-size: 25px;
     line-height: 1.1;
 }
@@ -521,19 +536,23 @@ h3 {
     color: #777;
 }
 
-.logo-image {
+.logo-image,
+.homepage-image {
     width: 100%;
     height: auto;
+    overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 
-.homepage-image {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-}
+
+
+
+
+
+
+
+
 
 .final-container {
     padding-left: 32px;
@@ -562,7 +581,7 @@ h3 {
     font-weight: 550;
 }
 
-.final-intro > p.section-label {
+.final-intro > p:not(.section-label) {
     max-width: 460px;
     margin: 0 auto;
     font-size: 12px;
@@ -573,6 +592,14 @@ h3 {
 .highlight {
     border-top: 1px solid #f0f2f0;
 }
+
+
+
+
+
+
+
+
 
 .method-section{
     border-top: 1px solid #f0f2f0;
@@ -631,6 +658,14 @@ h3 {
     line-height: 1.7;
 }
 
+
+
+
+
+
+
+
+
 .quote-section {
     border-bottom: 1px solid #f0f2f0;
 }
@@ -677,6 +712,15 @@ h3 {
 .quote-author p {
     margin-top:8px;
 }
+
+
+
+
+
+
+
+
+
 
 .design-intro {
     padding-bottom: 45px;
@@ -736,10 +780,6 @@ h3 {
     width: 100%;
     height: 1px;
     margin-bottom: 18px;
-    background: #dce2dc;
-}
-
-.system-card .card-line {
     background: #08872b;
 }
 
@@ -756,6 +796,7 @@ h3 {
 }
 
 .system-card a {
+    font-size: 11px;
     text-decoration: underline;
 }
 
@@ -766,6 +807,15 @@ h3 {
     font-size: 10px;
     line-height: 1.6;
 }
+
+
+
+
+
+
+
+
+
 
 .project-cta {
     padding: 55px 0;
@@ -790,16 +840,30 @@ h3 {
     color: #fff;
 }
 
-.project-cta p.section-label {
-    margin-bottom: 22px;
+.project-cta .cta-text {
+    max-width: 460px;
+    margin: 0 auto 22px;
     color: #999;
     font-size: 12px;
     line-height: 1.6;
 }
 
-.project-cta .buttom {
+.project-cta .button {
     font-size: 11px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     background: #0b110b;
@@ -841,7 +905,24 @@ h3 {
     font-size: 9px;
 }
 
-@media (max-width:768px) {
+
+
+
+
+
+
+
+
+
+
+@media (max-width:770px) {
+
+    .eyebrow-cursor {
+      display: inline-block;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
     .navigation-content {
         padding-inline: 16px;
     }
@@ -862,13 +943,13 @@ h3 {
     
     .navigation-toggle-bar {
         display: block;
-        height: 1.5px;
+        height: 2px;
         background: #fff;
         transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
     .navigation-toggle[aria-expanded="true"] .navigation-toggle-bar:nth-child(1) {
-        transform: translateY(6.5px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
     }
 
     .navigation-toggle[aria-expanded="true"] .navigation-toggle-bar:nth-child(2) {
@@ -876,7 +957,20 @@ h3 {
     }
 
     .navigation-toggle[aria-expanded="true"] .navigation-toggle-bar:nth-child(3) {
-        transform: translateY(-6.5px) rotate(45deg);
+        transform: translateY(-7px) rotate(45deg);
+    }
+
+    .navigation-panel {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 8px 16px 16px;
+        background: #050505;
+        border-left: 0;
+        border-bottom: 1px solid #252525;
     }
 
     .navigation-panel.is-open {
@@ -895,6 +989,28 @@ h3 {
         font-size: 15px;
         border-bottom: 1px solid #1c1c1c;
     }
+
+
+
+
+
+
+
+
+    .hero {
+        padding: 56px 0 48px;
+    }
+    
+    .hero-title {
+        font-size: 34px;
+        font-weight: 400;
+    }
+
+
+
+
+
+
 
     .final-container {
         padding-left: 20px;
@@ -925,5 +1041,39 @@ h3 {
         padding: 14px;
     }
 
-    
+}
+
+ @media (max-width: 900px) {
+    .concept-grid,
+    .sitemap-content,
+    .assets-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .project-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-info-grid > div:first-child {
+        padding-left: 20px;
+    }
+
+    .objectives {
+        grid-template-columns: 1fr;
+    }
+
+    .objective-card + .objective-card {
+        border-left: 1px solid #e5e5e5;
+        border-top: 0;
+    }
+
+    .system-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .sitemap,
+    .assets-section {
+        padding: 80px 0;
+    }
 }
